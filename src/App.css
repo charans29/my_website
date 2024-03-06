@@ -36,6 +36,22 @@
   100% { opacity: 0; }
 }
 
+@media (prefers-reduced-motion: no-preference) {
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+}
+
+.gear {
+  animation: spin infinite 1s linear;
+  font-size: 15px;
+}
+
 .App-header {
   min-height: 10vh;
   display: flex;
@@ -46,7 +62,7 @@
   font-style:initial;
   margin-left: 5px;
   margin-right: 50px;
-  animation: appear 1s ease-in-out forwards; 
+  /* animation: appear 1s ease-in-out forwards;  */
 }
 
 .App-header img {
@@ -59,6 +75,7 @@
 }
 
 .text-color {
+  opacity: 100;
   color: #F2EEE7;
 }
 
@@ -72,8 +89,8 @@
 
 .social-icons {
   display: flex;
-  justify-content: space-between;
   width: 10%;
+  justify-content: space-between;
 }
 
 .responsive-image { 
@@ -95,7 +112,6 @@
   gap: 10px;
   height: 83.5vh;
   margin-top: 0;
-  /* animation: appear 1s ease-in-out forwards;  */
 }
 
 .box1 {
@@ -103,7 +119,12 @@
   grid-row: 1;
   background-image: linear-gradient(135deg,#1e1e20,#0e0e11 32%);
   outline: .1px solid #383D3F;
-  animation: appear 1s ease-in-out forwards; 
+  animation: appear 0.5s ease-in-out forwards;
+}
+
+.delay1{
+  opacity: 0;
+  animation-delay: .5s; 
 }
 
 .animate{
@@ -119,7 +140,12 @@
   background-repeat: no-repeat; 
   background-position: center -10px;
   outline: .1px solid #383D3F;
-  animation: appear ease-in-out 1s forwards; 
+  animation: appear 0.5s ease-in-out forwards; 
+}
+
+.delay2{
+  opacity: 0;
+  animation-delay: .5s; 
 }
 
 .box3 {
@@ -127,7 +153,28 @@
   grid-column: 3/5;
   background-image: linear-gradient(135deg,#1e1e20,#0e0e11 32%);
   outline: .1px solid #383D3F;
-  animation: appear 1s ease-in-out forwards; 
+  animation: appear 0.45s ease-in-out forwards; 
+}
+
+.delay3{
+  opacity: 0;
+  animation-delay: 1s; 
+}
+
+.badge {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 30px; /* adjust as needed */
+  height: 30px; /* adjust as needed */
+  /* background-image: url('icon.png'); replace with your icon image path */
+  /* background-size: cover; */
+}
+
+.prj-title{
+  opacity: 0;
+  animation: appear 0.45s ease-in-out forwards; 
+  animation-delay: 1s;
 }
 
 .box4 {
@@ -135,7 +182,12 @@
   grid-column: 5/7;
   background-image: linear-gradient(135deg,#1e1e20,#0e0e11 32%);
   outline: .1px solid #383D3F;
-  animation: appear 1s ease-in-out forwards; 
+  animation: appear 0.45s ease-in-out forwards 
+}
+
+.delay4{
+  opacity: 0;
+  animation-delay: 1s; 
 }
 
 .box5 {
@@ -144,7 +196,12 @@
   height: 420px;
   background-image: linear-gradient(135deg,#1e1e20,#0e0e11 32%);
   outline: .1px solid #383D3F;
-  animation: appear 1s ease-in-out forwards; 
+  animation: appear .45s ease-in-out forwards; 
+}
+
+.delay5{
+  opacity: 0;
+  animation-delay: 1s; 
 }
 
 .box6 {
@@ -152,7 +209,12 @@
   grid-column: 3/4;
   background-image: linear-gradient(135deg,#1e1e20,#0e0e11 32%);
   outline: .1px solid #383D3F;
-  animation: appear 1s ease-in-out forwards; 
+  animation: appear 0.5s ease-in-out forwards; 
+}
+
+.delay6{
+  opacity: 0;
+  animation-delay: 1.25s; 
 }
 
 .box7 {
@@ -160,7 +222,12 @@
   grid-column: 4/7;
   background-image: linear-gradient(135deg,#1e1e20,#0e0e11 32%);
   outline: .1px solid #383D3F;
-  animation: appear 1s ease-in-out forwards; 
+  animation: appear 0.5s ease-in-out forwards; 
+}
+
+.delay7{
+  opacity: 0;
+  animation-delay: 1.25s; 
 }
 
 .body-text {
@@ -183,6 +250,12 @@
 .research {
   grid-column: 4 / 7;
   grid-row: 3 / 4;   
+}
+
+.box-titles{
+  opacity: 0;
+  animation: appear 0.5s ease-in-out forwards; 
+  animation-delay: 1.25s;
 }
 
 .container {
@@ -212,7 +285,9 @@
   overflow: auto;
   top: 25px;
   line-height: .01;
-  animation: appear 1s ease-in-out forwards; 
+  animation: appear .5s ease-in-out forwards;
+  opacity: 0; 
+  animation-delay: 1.30s;
 }
 
 .size{
