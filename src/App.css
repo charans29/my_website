@@ -110,7 +110,7 @@
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: 100px 100px;
   gap: 10px;
-  height: 83.5vh;
+  height: auto;
   margin-top: 0;
 }
 
@@ -154,6 +154,25 @@
   background-image: linear-gradient(135deg,#1e1e20,#0e0e11 32%);
   outline: .1px solid #383D3F;
   animation: appear 0.45s ease-in-out forwards; 
+  /* position: relative; */
+  overflow:auto;
+}
+
+.box3:before { /* Add this block */
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -100%;
+  width: 100%;
+  height: 100%;
+  border-radius: 15px 0 0 15px;
+  outline: .1px solid #383D3F;
+  background: rgba(255, 255, 255, 0.03); /* Change color and opacity as needed */
+  transition-delay: 5s;
+}
+
+.box3:hover:before { /* Add this block */
+  left: 70%;
 }
 
 .delay3{
@@ -288,6 +307,7 @@
   animation: appear .5s ease-in-out forwards;
   opacity: 0; 
   animation-delay: 1.30s;
+  height: auto;
 }
 
 .size{

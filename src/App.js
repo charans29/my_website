@@ -57,7 +57,7 @@ function App() {
         <div class="box2 text-color animate delay2" style={{marginRight:5}}></div>
         
         <div class="box3 text-color kode-mono-text delay3" style={{marginLeft:.5, marginRight:5, height:300, marginTop:55}}>dApp
-          <div className='badge'><FontAwesomeIcon icon={faAward} style={{color: '#FDE53B', fontSize:20, marginTop:-5, marginLeft:-6,display:'flex', justifyContent:'flex-start'}} /></div></div>
+          <div className='badge'><FontAwesomeIcon icon={faAward} style={{color: '#FDE53B', fontSize:20, marginTop:-0.25, marginLeft:-0.5,display:'flex', justifyContent:'flex-start'}} /></div></div>
         <div className="text-gutter2 text-color animate kode-mono-text prj-title" style={{marginTop:20, marginRight:50}}>PROJECTS</div>
         <div class="box4 text-color kode-mono-text delay4" style={{marginLeft:.5, height:300, marginTop:55, marginRight:45}}>DriveX</div>
 
